@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".KrediTaksit">
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Kredi tutarı"
+        android:gravity="center"
+        android:id="@+id/kredi"
+        android:inputType="number"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Taksit tutarı"
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/taksit"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/rg"
+        android:checkedButton="@id/faiz1"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/faiz1"
+            android:text="%1 faiz"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/faiz2"
+            android:text="%2 faiz"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/faiz3"
+            android:text="%5 faiz"
+            />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hesapet"
+        android:text="Hesapla"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Sonuc"
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/sonuc"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
